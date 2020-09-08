@@ -5,7 +5,7 @@ function restrict(role) {
 
 	return async (req, res, next) => {
 		const authError = {
-			message: "Invalid credentials",
+			message: "You shall not pass!",
 		}
 
 		try {

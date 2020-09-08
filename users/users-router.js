@@ -72,7 +72,7 @@ router.post("/api/login", async (req, res, next) => {
 
 router.get("/api/logout", async (req, res, next) => {
 	try {
-		req.session.destroy((err) => {
+		req.cookie.destroy((err) => {
 			if (err) {
 				next(err)
 			} else {
